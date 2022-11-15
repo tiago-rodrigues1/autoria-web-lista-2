@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+    color: #06113C;
+}
+
+header {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #FF8C32;
+    color: #F7F7F7;
+}
+
+header .perfil {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+header .perfil img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+aside {
+    width: 15%;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
+aside ul {
+    height: 100%;
+    padding: 1.5rem;
+    list-style: none;
+}
+
+aside ul li {
+    background-color: #06113C;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    transition: 200ms;
+}
+
+li:hover {
+    font-size: 1.1rem;
+}
+
+li a {
+    display: block;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+th {
+    background-color: rgba(255, 140, 50, .2);
+    color: #FF8C32;
+    font-size: 1.2rem;
+}
+
+td, th {
+    padding: .5rem;
+}
+
+tfoot {
+    background-color: rgba(255, 140, 50, .2);
+    font-weight: bold;
+    color: #FF8C32;
+}
+
