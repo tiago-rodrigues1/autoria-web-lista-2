@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles\bootstrap.min.css">
+</head>
+
+<body class="container-fluid p-4 vstack justify-content-center align-items-center" style="height: 100vh; background-color: #F7F7F7;">
+    <h1 class="text-primary fw-bold pb-4">Me Segue</h1>
+    <form action="/" method="post" class="col-12 col-sm-8 p-4 rounded-3 bg-white">
+        <h4 class="pb-3">Criar conta</h4>
+        <div class="vstack gap-3">
+            <div class="hstack gap-3">
+                <input type="text" class="form-control" placeholder="Nome" name="nome">
+                <input type="text" class="form-control" placeholder="Sobroneme" name="sobrenome">
+            </div>
+            <input type="text" class="form-control" name="contato" placeholder="Email ou telefone">
+            <input type="password" class="form-control" placeholder="Senha" minlength="8" name="senha">
+            <div>
+                <label for="nascimento" class="form-label">Nascimento</label>
+                <input type="date" class="form-control" name="nascimento" id="nascimento">
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="generoMasc" value="1" name="genero">
+                    <label class="form-check-label" for="generoMasc">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="generoFem" value="2" name="genero">
+                    <label class="form-check-label" for="generoFem">Feminino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="generoPersonal" value="3" name="genero">
+                    <label class="form-check-label" for="generoPersonal">Personalizado</label>
+                </div>
+            </div>
+            <div class="vstack gap-3 text-center pt-3">
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <p>Já tem uma conta ? <a href="#">Faça login</a></p>
+            </div>
+        </div>
+    </form>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
